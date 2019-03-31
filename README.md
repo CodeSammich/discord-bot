@@ -9,7 +9,7 @@
   * [Installation](#installation)
     * [Local Windows](#local-windows)
     * [Ubuntu 18.04](#ubuntu-1804)
-  * [Known Bugs](#known-bugs)
+  * [Known Issues](#known-issues)
   * [Backlog](#backlog)
 
 # discord-bot
@@ -121,8 +121,10 @@ https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&s
 
 **You should see a message [like this](http://prntscr.com/n4yrzt)**
 
-# Known Bugs
+# Known Issues
 Multiple initial starting messages may appear if !start is used after !stop in under 16 seconds. This is due to `asyncio.sleep(16)` in `!start`. This is not a critical bug and does not affect the performance of the timer. 
+
+If !2, !3, and !stop commands are returning text responses, but !start is not working properly, make sure your voice channels have specific permissions for the bot. If you use the permissions link from the previous section, make sure that bot role is added explicitly to your voice channel permissions.
 
 # Backlog
 ## Possible Future Features:
