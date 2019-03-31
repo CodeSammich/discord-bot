@@ -111,7 +111,7 @@ To install, run the following commands. You will be asked for your password many
 
 **MAKE SURE THE KEY IS CORRECT, OTHERWISE THE BOT WILL NOT RECOGNIZE YOUR DISCORD SERVER.**
 
-**7) Before running the bot, please make sure to follow this link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
+**7) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
 
 https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
 
@@ -124,7 +124,7 @@ https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&s
 # Known Issues
 Multiple initial starting messages may appear if !start is used after !stop in under 16 seconds. This is due to `asyncio.sleep(16)` in `!start`. This is not a critical bug and does not affect the performance of the timer. 
 
-If !2, !3, and !stop commands are returning text responses, but !start is not working properly, make sure your voice channels have specific permissions for the bot. If you use the permissions link from the previous section, make sure that bot role is added explicitly to your voice channel permissions.
+If `!2`, `!3`, and `!stop` commands are returning text responses, but `!start` is not joining the voice channel or otherwise not working properly, make sure your voice channels have correct permissions. Use the permissions link from the previous section and make sure that bot role is added explicitly to your voice channel permissions.
 
 # Backlog
 ## Possible Future Features:
