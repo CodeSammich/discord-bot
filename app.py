@@ -248,13 +248,14 @@ async def on_message(message):
         if client.is_voice_connected(server):     # if bot is in a vc
             vc = find_bot_voice_client(server.id) # find the vc
 
-#            if author.server_permissions.administrator or author_in_vc(author, vc):
-            if author_in_vc(author, vc):
+            if author.server_permissions.administrator or author_in_vc(author, vc):
                 # if the author is an admin or is in the vc with the bot
                 await vc.disconnect()                 # disconnect from voice channel
                 phases[vc.server.id] = 0
                 del vcs[vc.server.id]                 # delete the voice channel from dict
-                msg = 'Disconnected from {}.'.format(vc.channel)
+                msg = 'Disconnected from {}'.format(vc.channel)
+                if author.server_permissions.administrator:
+                    msg += ' by administrator {}'.format(author) 
             else:
                 msg = 'You are not in the voice chat or an administrator.'
         else:
@@ -271,16 +272,16 @@ def author_in_vc(author, vc):
     Inputs: String author
     Returns: True/False
     '''
-    for member in vc.server.members:
-#        log('{} is in the {} server. The bot is in the {} server.'.format(member, member.server, vc.channel))
-        try:
-            # need to compare ids and not just channel names because names are not unique
-            # (e.g. two channels can have the same name)
-            if member.voice.voice_channel.id == vc.channel.id:
-                return True
-        except AttributeError: # NoneType object has no attribute 'id'
-            # this will happen if someone outside of the vc tries to use the command 
-            continue
+    try:
+        # need to compare ids and not just channel names because names are not unique
+        # (e.g. two channels can have the same name)
+        log('{} is in the {} channel. The bot is in the {} channel.'.format(author, author.voice.voice_channel, vc.channel))
+
+        if author.voice.voice_channel.id == vc.channel.id:
+            return True
+    except AttributeError: # NoneType object has no attribute 'id'
+        # this will happen if someone outside of the vc tries to use the command 
+        pass
             
     return False
         
