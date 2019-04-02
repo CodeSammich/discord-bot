@@ -82,7 +82,7 @@ If the automatic install fails, go to [Manual Install](#manual-install).
 
 **Then, right click on the Ubuntu window to paste into the command line (where "key" is, no "" quotes):**
 
-> chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
+> sudo chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
 
 **3) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
 
@@ -104,9 +104,9 @@ https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&s
 
 > sudo apt update
 
-**2) Install Python 3.6.7, Pip3, [Espeak](http://espeak.sourceforge.net/), and [FFMPEG](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/), [libopus](http://ubuntuhandbook.org/index.php/2017/06/install-opus-1-2-audio-library-in-ubuntu-16-04-14-04/):**
+**2) Install Python 3.6, Pip3, [Espeak](http://espeak.sourceforge.net/), and [FFMPEG](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/), [libopus](http://ubuntuhandbook.org/index.php/2017/06/install-opus-1-2-audio-library-in-ubuntu-16-04-14-04/):**
 
-> sudo apt install python3-pip espeak ffmpeg libopus0 opus-tools git -y
+> sudo apt install python3 python3-pip espeak ffmpeg libopus0 opus-tools git -y
 
 **3) Clone this repository and install required Pip packages:**
 
