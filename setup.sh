@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y;
 sudo apt update;
 echo "Installing all necessary packages"
 sudo apt install python3 python3-pip espeak ffmpeg libopus0 opus-tools git -y;
-echo "Preventing Pip from being Upgraded"
+echo "Preventing pip from being upgraded to avoid conflicts with pip3"
 sudo apt-mark hold python-pip
 echo "Upgrading all other packages"
 sudo apt upgrade -y;
