@@ -75,7 +75,7 @@ If the automatic install fails, go to [Manual Install](#manual-install).
 
 **1) Clone the repository**
 
-> cd ~ && git clone https://github.com/CodeSammich/discord-bot && cd ~/discord-bot
+> cd ~ && sudo apt install git && git clone https://github.com/CodeSammich/discord-bot && cd ~/discord-bot
 
 **2) Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a project.**
 **Under the `Bot` section, create a bot and copy the Token by clicking `Copy`.**
