@@ -148,4 +148,4 @@ If `!2`, `!3`, and `!stop` commands are returning text responses, but `!start` i
 
 As of April 2nd, 2019, [Reboot Central](https://discord.gg/Rfs6huP) has added this server for public use.
 
-If you would like to invite this bot to your own servers, just follow [this invite link.](https://discordapp.com/oauth2/authorize?client_id=561450974422630410&permissions=37084480&scope=bot)
+If you would like to invite this bot to your own server, just follow [this invite link.](https://discordapp.com/oauth2/authorize?client_id=561450974422630410&permissions=37084480&scope=bot)
