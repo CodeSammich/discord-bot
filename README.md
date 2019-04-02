@@ -11,8 +11,7 @@
     * [Ubuntu 18.04](#ubuntu-1804)
       * [Automatic Install](#automatic-install)
       * [Manual Install](#manual-install)
-  * [Known Issues](#known-issues)
-  * [Backlog](#backlog)
+  * [FAQ](#faq)
 
 # discord-bot
 Discord Bot for Time Keeping in MapleStory
@@ -139,38 +138,14 @@ https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&s
 
 **You should see a message [like this](http://prntscr.com/n4yrzt)**
 
-# Known Issues
-Multiple initial starting messages may appear if !start is used after !stop in under 16 seconds. This is due to `asyncio.sleep(16)` in `!start`. This is not a critical bug and does not affect the performance of the timer. 
+# FAQ
+
+### "Cannot connect to voice channel, request timed out. Try checking your channel/bot permissions."
 
 If `!2`, `!3`, and `!stop` commands are returning text responses, but `!start` is not joining the voice channel or otherwise not working properly, make sure your voice channels have correct permissions. Use the permissions link from the previous section and make sure that bot role is added explicitly to your voice channel permissions.
 
-# Backlog
-## Possible Future Features:
- - Allow input of current clock time for soul split
-    - Helpful in the event of player error, especially during a phase change
- - Replace espeak dependency with media clip splicing and merging
-    - Separate folder with 0-9 mp3 files and merge them together to artificially recreate the dynamic part we needed espeak for
-    - Can use Google TTS completely in that way, making the vocals consistent
-    
-## Resolved 3/30/19 19:41 EDT:
-**Concurrency Application and Scalability Limitations**
+### Where can I use this without installation?
 
-Find ways to lessen the number of "Applications" under Discord Dev Portal and use fewer number of keys. Current implementation is one application/key per server, and the OAuth2 permission toggling is unclear.
+As of April 2nd, 2019, [Reboot Central](https://discord.gg/Rfs6huP) has added this server for public use.
 
-Possible research directions on how to further scale bot: Pink Bean, NightBot, MEE6, Carl-bot
-
-https://discordapp.com/developers/docs/topics/oauth2#bots
-
-## Resolved 3/30/19 14:31 EDT: 
-**LibOpus Crash**
-
-Using a command, which triggers another OPUS MP3 playback, when bot is already speaking will crash the bot
-
-This is due to libopus, most likely happening in bot_speak() with the ffmpeg player.
-
-The create_ffmpeg_player is in a new thread every time it is called to play an mp3 track, so I cannot figure out
-how to make the previous thread's ffmpeg player stop if a new audio request is started.
-
-In other words, if the bot is already speaking and is asked to speak something else, it will crash.
-
-["Creates a stream player for ffmpeg that launches in a separate thread to play audio."](https://discordpy.readthedocs.io/en/latest/api.html#discord.VoiceClient.create_ffmpeg_player)
+If you would like to invite this bot to your own servers, just follow [this invite link.](https://discordapp.com/oauth2/authorize?client_id=561450974422630410&permissions=37084480&scope=bot)
