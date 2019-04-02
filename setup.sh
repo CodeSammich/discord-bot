@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Adding necessary respositories
+echo "Adding necessary respositories"
 sudo add-apt-repository universe -y;
 sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y;
 sudo apt update;
