@@ -129,7 +129,7 @@ https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&s
 
 **MAKE SURE THE KEY IS CORRECT, OTHERWISE THE BOT WILL NOT RECOGNIZE YOUR DISCORD SERVER.**
 
-**6) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
+**6) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](https://imgur.com/a/A1p0tAI)**
 
 https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
 
