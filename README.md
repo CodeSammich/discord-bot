@@ -82,7 +82,7 @@ If the automatic install fails, go to [Manual Install](#manual-install).
 
 **Then, right click on the Ubuntu window to paste into the command line (where "key" is, no "" quotes):**
 
-> chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
+> sudo chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
 
 **3) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
 
