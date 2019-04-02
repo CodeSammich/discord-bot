@@ -71,7 +71,7 @@ To install, run the following commands. You will be asked for your password:
 
 If the automatic install fails, go to Manual Install.
 
-**1) Clone the repository
+**1) Clone the repository**
 
 > cd ~ && git clone https://github.com/CodeSammich/discord-bot && cd ~/discord-bot
 
@@ -86,7 +86,7 @@ If the automatic install fails, go to Manual Install.
 
 https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
 
-**4) Run the bot with:
+**4) Run the bot with:**
 
 > python3 app.py
 
