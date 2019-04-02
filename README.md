@@ -79,7 +79,7 @@ To install, run the following commands. You will be asked for your password many
 
 **2) Install Python 3.6.7, Pip3, [Espeak](http://espeak.sourceforge.net/), and [FFMPEG](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/), [libopus](http://ubuntuhandbook.org/index.php/2017/06/install-opus-1-2-audio-library-in-ubuntu-16-04-14-04/):**
 
-> sudo apt install python3-pip espeak ffmpeg libopus0 opus-tools -y
+> sudo apt install python3-pip espeak ffmpeg libopus0 opus-tools git -y
 
 **3) Clone this repository and install required Pip packages:**
 
