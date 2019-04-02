@@ -9,6 +9,8 @@
   * [Installation](#installation)
     * [Local Windows](#local-windows)
     * [Ubuntu 18.04](#ubuntu-1804)
+      * [Automatic Install](#automatic-install)
+      * [Manual Install](#manual-install)
   * [Known Issues](#known-issues)
   * [Backlog](#backlog)
 
@@ -61,13 +63,38 @@ Once installed, run, and you will be asked to enter a new UNIX username and pass
 Continue onto the following section once you are done.
 
 ## Ubuntu 18.04
-**Strongly suggested to use Python 3.6.7.**
+**Strongly suggested to use Python 3.6. Please verify with python3 --version**
 
 Currently, the only tested platform is **Ubuntu 18.04**. Other Linux distributions may work as well.
 
-To install, run the following commands. You will be asked for your password many times:
+To install, run the following commands. You will be asked for your password:
 
-**NOTE:** For Linux beginners: `Do you want to continue? [Y/n]`, just type `y` and press `ENTER`.
+### Automatic Install
+
+If the automatic install fails, go to [Manual Install](#manual-install).
+
+**1) Clone the repository**
+
+> cd ~ && git clone https://github.com/CodeSammich/discord-bot && cd ~/discord-bot
+
+**2) Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a project.**
+**Under the `Bot` section, create a bot and copy the Token by clicking `Copy`.**
+
+**Then, right click on the Ubuntu window to paste into the command line (where "key" is, no "" quotes):**
+
+> chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
+
+**3) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
+
+https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
+
+**4) Run the bot with:**
+
+> python3 app.py
+
+**You should see a message [like this](http://prntscr.com/n4yrzt)**
+
+### Manual Install
 
 **1) Update apt:**
 
