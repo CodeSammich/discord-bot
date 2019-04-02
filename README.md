@@ -73,15 +73,13 @@ To install, run the following commands. You will be asked for your password many
 
 > sudo add-apt-repository universe
 
+> sudo add-apt-repository ppa:jonathonf/ffmpeg-3
+
 > sudo apt update
 
-**2) Install Python 3.6.7, Pip3, [Espeak](http://espeak.sourceforge.net/), and [FFMPEG](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/):**
+**2) Install Python 3.6.7, Pip3, [Espeak](http://espeak.sourceforge.net/), and [FFMPEG](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/), [libopus](http://ubuntuhandbook.org/index.php/2017/06/install-opus-1-2-audio-library-in-ubuntu-16-04-14-04/):**
 
-> sudo apt install python3-pip
-
-> sudo apt install espeak
-
-> sudo apt install ffmpeg
+> sudo apt install python3-pip espeak ffmpeg libopus0 opus-tools -y
 
 **3) Clone this repository and install required Pip packages:**
 
@@ -91,18 +89,11 @@ To install, run the following commands. You will be asked for your password many
 
 > pip3 install -r `requirements.txt`
 
-**4) [Install libopus](http://ubuntuhandbook.org/index.php/2017/06/install-opus-1-2-audio-library-in-ubuntu-16-04-14-04/):**
-> sudo add-apt-repository ppa:jonathonf/ffmpeg-3
-
-> sudo apt update
-
-> sudo apt install libopus0 opus-tools
-
-**5) Create a file for the Discord bot secret key:**
+**4) Create a file for the Discord bot secret key:**
 
 > touch secret_key.txt
 
-**6) Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a project.**
+**5) Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a project.**
 **Under the `Bot` section, create a bot and copy the Token by clicking `Copy`.**
 
 **Then, right click on the Ubuntu window to paste into the command line (where "key" is, no "" quotes):**
@@ -111,11 +102,11 @@ To install, run the following commands. You will be asked for your password many
 
 **MAKE SURE THE KEY IS CORRECT, OTHERWISE THE BOT WILL NOT RECOGNIZE YOUR DISCORD SERVER.**
 
-**7) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
+**6) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
 
 https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
 
-**8) Finally, run the bot:**
+**7) Finally, run the bot:**
 
 > python3 app.py
 
