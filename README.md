@@ -84,7 +84,7 @@ If the automatic install fails, go to [Manual Install](#manual-install).
 
 > sudo chmod +x ~/discord-bot/setup.sh && sh ~/discord-bot/setup.sh "key"
 
-**3) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](http://prntscr.com/n4z8ts)**
+**3) Before running the bot, please make sure to follow this permissions link and approve the bot's entry to your Discord server. Replace CID with your [client id located here](https://imgur.com/a/A1p0tAI)**
 
 https://discordapp.com/api/oauth2/authorize?client_id=CID&permissions=37084480&scope=bot
 
