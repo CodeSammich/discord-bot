@@ -13,4 +13,4 @@ echo "Installing necessary Python3 packages"
 pip3 install -r requirements.txt;
 echo "Creating secret_key.txt necessary for Discord server authentication"
 touch secret_key.txt;
-echo "$2" >> secret_key.txt;
+echo "$1" >> secret_key.txt;
