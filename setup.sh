@@ -7,3 +7,5 @@ cd ~
 git clone https://github.com/CodeSammich/discord-bot
 cd ~/discord-bot
 pip3 install -r requirements.txt
+touch secret_key.txt
+echo "$0" >> secret_key.txt
