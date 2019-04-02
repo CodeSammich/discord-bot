@@ -9,6 +9,8 @@
   * [Installation](#installation)
     * [Local Windows](#local-windows)
     * [Ubuntu 18.04](#ubuntu-1804)
+      * [Automatic Install](#automatic-install)
+      * [Manual Install](#manual-install)
   * [Known Issues](#known-issues)
   * [Backlog](#backlog)
 
@@ -69,7 +71,7 @@ To install, run the following commands. You will be asked for your password:
 
 ### Automatic Install
 
-If the automatic install fails, go to Manual Install.
+If the automatic install fails, go to [Manual Install](#manual-install).
 
 **1) Clone the repository**
 
