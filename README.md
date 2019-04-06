@@ -35,6 +35,7 @@ It can be deployed on up to as many servers per host as Discord allows per appli
 This bot may not always be 100% accurate to the real fight due to unresolvable latency issues with both the Nexon and Discord servers. There may be a variance of 0-5s from actual game.
 
 **Live on Reboot Central**
+
 As of April 2nd, 2019, [Reboot Central](https://discord.gg/Rfs6huP) has added this server for public use.
 
 If you would like to invite this bot to your own server, just follow [this invite link.](https://discordapp.com/oauth2/authorize?client_id=561450974422630410&permissions=37084480&scope=bot)
